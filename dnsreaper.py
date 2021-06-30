@@ -8,10 +8,6 @@ import concurrent.futures
 
 import requests
 from discord import RequestsWebhookAdapter, Webhook
-import urllib3
-
-# To suppress any errors related to the requests library.
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # Define ANSII colors for more bearable output
 YELLOW = "\u001b[33m"
