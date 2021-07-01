@@ -100,6 +100,7 @@ def check_if_vulnerable(url, output_file_name):
             print(BLUE+"VULNERABLE!:", url, YELLOW+"Message:", RED+fingerprint, RESET)
             file.write(url+"\n")
             return BLUE+"VULNERABLE!:", url, YELLOW+"Message:", RED+fingerprint, RESET
+    file.close()
 
 
 parser = argparse.ArgumentParser(description="DNSReaper, automate subdomain and DNS hijacking discovery.",
